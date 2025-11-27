@@ -1,0 +1,79 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+.home-container {
+  background-color: #080f1f;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+  font-family: "Poppins", sans-serif;
+  width: 500% ;
+}
+
+.left-section h4 {
+  color: #ffc727;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.left-section h1 {
+  font-size: 62px;
+  line-height: 70px;
+  font-weight: 700;
+}
+
+.left-section p {
+  margin-top: 15px;
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+.left-section button {
+  margin-top: 30px;
+  padding: 12px 28px;
+  border-radius: 30px;
+  background-color: #ffc727;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #000;
+  transition: 0.3s ease;
+}
+
+.left-section button:hover {
+  background-color: #ffcf42;
+}
+
+.left-section .social-icons {
+  margin-top: 40px;
+  display: flex;
+  gap: 18px;
+  font-size: 20px;
+}
+
+.left-section .social-icons a {
+  color: white;
+  transition: 0.3s ease;
+}
+
+.left-section .social-icons a:hover {
+  color: #ffc727;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.right-section img {
+  width: 80%;
+  border-radius: 10px;
+  filter: grayscale(100%);
+  transition: 0.4s ease-in-out;
+}
+
+.right-section img:hover {
+  filter: grayscale(0%);
+}
