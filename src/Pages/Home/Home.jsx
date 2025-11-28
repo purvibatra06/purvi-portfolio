@@ -1,5 +1,5 @@
-
 import "./Home.css";
+import bgImage from "../../assets/bgImage.jpg"; 
 
 export default function Home() {
   return (
@@ -19,15 +19,18 @@ export default function Home() {
         </nav>
       </header>
 
-      <section className="home-body" id="home">
-        <div className="image-box">
-          <img
-            src="https://via.placeholder.com/300"
-            alt="Dummy"
-            className="profile-img"
-          />
-        </div>
-
+      <section
+        className="home-body"
+        id="home"
+        style={{
+          backgroundImage: `url(${bgImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          width: "100%",
+          minHeight: "100vh"
+        }}
+      >
         <div className="intro-text">
           <h1>Hello, I'm Purvi Batra</h1>
           <p>
