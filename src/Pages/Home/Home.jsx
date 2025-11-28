@@ -1,5 +1,6 @@
 import "./Home.css";
 import bgImage from "../../assets/bgImage.jpg"; 
+import About from "../About/About"
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
+          <a hre00000f="#skills">Skills</a>
           <a href="#experience">Experience</a>
           <a href="#contact">Contact Me</a>
           <a href="#cv">CV</a>
@@ -43,6 +44,7 @@ export default function Home() {
           </a>
         </div>
       </section>
+      <About/>
 
     </div>
   );
