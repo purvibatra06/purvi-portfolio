@@ -1,32 +1,21 @@
 import "./Home.css";
 import Header from "../../Common/Header/Header";
-import bgImage from "../../assets/bgImage.jpg"; 
-import About from "../About/About"
+import About from "../About/About";
 
 export default function Home() {
   return (
-    
     <div className="home-container">
-      <Header/>
+      <Header />
 
-
-      <section
-        className="home-body"
-        id="home"
-        style={{
-          backgroundImage: `url(${bgImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          width: "100%",
-          minHeight: "100vh"
-        }}
-      >
+      <section className="home-body" id="home">
         <div className="intro-text">
-          <h1>Hello, I'm Purvi Batra</h1>
+          <h1>
+            Hello, I'm <span className="highlight">Purvi Batra</span>
+          </h1>
+
           <p>
-            I am a passionate Web Developer working with <strong>React</strong> and 
-            <strong> Node.js</strong>. I love building clean, fast and modern web applications.
+            I am a passionate Web Developer working with <strong>React</strong> 
+            and <strong>Node.js</strong>. I love building clean, fast and modern web applications.
           </p>
 
           <a href="#about" className="know-more-btn">
@@ -34,8 +23,8 @@ export default function Home() {
           </a>
         </div>
       </section>
-      <About/>
 
+      <About />
     </div>
   );
 }

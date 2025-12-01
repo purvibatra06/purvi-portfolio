@@ -1,4 +1,5 @@
 import "./About.css";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function About() {
   return (
@@ -23,24 +24,10 @@ export default function About() {
           projects to improve my development skills.
         </p>
 
-        <div className="social-links">
-          <a 
-            href="https://www.linkedin.com/in/purvi-batra" 
-            target="_blank" 
-            rel="noreferrer"
-            className="social-btn linkedin"
-          >
-            LinkedIn
-          </a>
-
-          <a 
-            href="https://github.com/purvibatra" 
-            target="_blank" 
-            rel="noreferrer"
-            className="social-btn github"
-          >
-            GitHub
-          </a>
+        <div className="social-icons">
+          <a href="mailto:purvibatra484@gmail.com" className="icon email"><FaEnvelope /></a>
+          <a href="https://www.linkedin.com/in/yourprofile" target="_blank" className="icon linkedin"><FaLinkedin /></a>
+          <a href="https://github.com/yourgithub" target="_blank" className="icon github"><FaGithub /></a>
         </div>
 
       </div>

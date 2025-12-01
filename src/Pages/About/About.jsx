@@ -4,10 +4,11 @@ const aboutpage=()=>{
   
   return (
     <>
+   
     <About/>
     </>
 
   )
  
 }
-export default aboutpage
+export default aboutpage;
