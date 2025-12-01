@@ -3,6 +3,7 @@ import Header from "../../Common/Header/Header";
 import About from "../About/About";
 import Projects from "../../Components/Projects/Projects";
 import Skills from "../../Components/Skills/Skills";
+import Experience from "../../Components/Experience/Experience";
 
 export default function Home() {
   return (
@@ -16,8 +17,7 @@ export default function Home() {
           </h1>
 
           <p>
-            I am a passionate Web Developer working with <strong>React</strong> 
-            and <strong>Node.js</strong>. I love building clean, fast and modern web applications.
+            I am a passionate Web Developer working with <strong>React</strong> and <strong>Node.js</strong>. I love building clean, fast and modern web applications.
           </p>
 
           <a href="#about" className="know-more-btn">
@@ -29,6 +29,7 @@ export default function Home() {
       <About />
       <Projects/>
       <Skills/>
+      <Experience/>
     </div>
   );
 }
