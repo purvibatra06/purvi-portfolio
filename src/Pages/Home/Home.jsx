@@ -1,6 +1,8 @@
 import "./Home.css";
 import Header from "../../Common/Header/Header";
 import About from "../About/About";
+import Projects from "../../Components/Projects/Projects";
+import Skills from "../../Components/Skills/Skills";
 
 export default function Home() {
   return (
@@ -25,6 +27,8 @@ export default function Home() {
       </section>
 
       <About />
+      <Projects/>
+      <Skills/>
     </div>
   );
 }
