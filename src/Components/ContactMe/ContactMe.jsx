@@ -33,7 +33,7 @@ export default function ContactMe() {
           <div className="contact-item">
             <Github size={26} className="contact-icon" />
             <a href="https://github.com/purvibatra06" target="_blank">
-              github.com/yourgithub
+              github.com/purvibatra
             </a>
           </div>
 

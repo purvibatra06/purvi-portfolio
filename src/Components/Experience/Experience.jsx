@@ -25,6 +25,8 @@ export default function Experience() {
             <h3>{exp.role} - {exp.company}</h3>
             <span className="duration">{exp.duration}</span>
             <p>{exp.description}</p>
+            
+            
           </div>
         ))}
       </div>

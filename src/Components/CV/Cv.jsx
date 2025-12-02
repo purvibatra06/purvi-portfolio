@@ -7,19 +7,25 @@ const CVViewer = () => {
      <section id="cv" className="CV-container">
       <h2 className="cv-title">My Resume</h2>
 
-      <div className="cv-container">
-        <iframe
-          src={myCV}
-          title="My CV"
-          className="cv-iframe"
-        ></iframe>
-      </div>
-
       <div className="cv-buttons">
-        <a href={myCV} download className="download-btn">
-          Download CV
-        </a>
-      </div>
+  <a 
+    href={myCV} 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="view-btn"
+  >
+    View CV
+  </a>
+
+  <a 
+    href={myCV} 
+    download 
+    className="download-btn"
+  >
+    Download CV
+  </a>
+</div>
+
     </section>
   );
 };

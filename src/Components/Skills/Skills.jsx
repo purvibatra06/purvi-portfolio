@@ -33,6 +33,7 @@ export default function Skills() {
             <span className="skill-pill">GitHub</span>
             <span className="skill-pill">VS Code</span>
             <span className="skill-pill">Canva</span>
+            <spam className="skill-pill">hhhhh</spam>
           </div>
         </div>
 
