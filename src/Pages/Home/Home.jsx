@@ -5,6 +5,7 @@ import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
 import Experience from "../Experience/Experience";
 import Contact from "../ContactMe/ContactMe";
+import CvPage from "../CV/Cv";
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
       <Skills/>
       <Experience/>
       <Contact/>
+      <CvPage/>
     </div>
   );
 }
