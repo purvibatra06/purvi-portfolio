@@ -4,10 +4,8 @@ export default function Skills() {
   return (
     <section id="skills" className="skills-section">
 
-      <h2 className="gradient-title">Skills</h2>
-
+      <h2 className="gradient-title">Skills</h2>.
       <div className="skills-container">
-
         <div className="skill-group">
           <h3 className="skill-heading">Frontend</h3>
           <div className="skill-list"> 
