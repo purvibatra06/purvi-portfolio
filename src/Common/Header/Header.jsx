@@ -12,7 +12,7 @@ export default function Header() {
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
           <a href="#experience">Experience</a>
-          <a href="#contact">Contact Me</a>
+          <a href="#contactMe">Contact Me</a>
           <a href="#cv">CV</a>
         </nav>
       </header>

@@ -1,22 +1,27 @@
+import React from "react";
 import "./Cv.css";
-import myCV from "../../assets/purvi_cv.pdf";
+import myCV from "../../assets/Purvi_cv.pdf"; 
 
-export default function ShowCV() {
+const CVViewer = () => {
   return (
-    <section className="cv-view-container">
-      <div className="cv-view-card">
-        <h2 className="cv-view-title">My Resume</h2>
+     <section id="cv" className="CV-container">
+      <h2 className="cv-title">My Resume</h2>
 
-       <iframe
+      <div className="cv-container">
+        <iframe
           src={myCV}
           title="My CV"
           className="cv-iframe"
         ></iframe>
+      </div>
 
-        <a href="/cv/purvi_cv.pdf" download className="cv-download-btn">
+      <div className="cv-buttons">
+        <a href={myCV} download className="download-btn">
           Download CV
         </a>
       </div>
     </section>
   );
-}
+};
+
+export default CVViewer;
