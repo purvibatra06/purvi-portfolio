@@ -27,7 +27,7 @@ export default function About() {
         <div className="social-icons">
           <a href="mailto:purvibatra484@gmail.com" className="icon email"><FaEnvelope /></a>
           <a href="https://www.linkedin.com/in/purvi-batra-54b37b295" target="_blank" className="icon linkedin"><FaLinkedin /></a>
-          <a href="https://github.com/yourgithub" target="_blank" className="icon github"><FaGithub /></a>
+          <a href="https://github.com/purvibatra06" target="_blank" className="icon github"><FaGithub /></a>
         </div>
 
       </div>
