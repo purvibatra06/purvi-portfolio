@@ -29,7 +29,7 @@ export default function Projects() {
         <div className="project-card">
           <h3 className="project-title">Job Portal</h3>
           <p>
-            A full-stack job portal with authentication, role-based access,
+            Built using Node.js with authentication, role-based access,
             company management, and job posting features.
           </p>
         </div>

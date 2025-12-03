@@ -1,4 +1,3 @@
-import React from "react";
 import "./Cv.css";
 import myCV from "../../assets/Purvi_cv.pdf"; 
 

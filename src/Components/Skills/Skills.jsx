@@ -4,7 +4,7 @@ export default function Skills() {
   return (
     <section id="skills" className="skills-section">
 
-      <h2 className="gradient-title">Skills</h2>.
+      <h2 className="gradient-title">Skills</h2>
       <div className="skills-container">
         <div className="skill-group">
           <h3 className="skill-heading">Frontend</h3>
@@ -33,7 +33,7 @@ export default function Skills() {
             <span className="skill-pill">GitHub</span>
             <span className="skill-pill">VS Code</span>
             <span className="skill-pill">Canva</span>
-            <spam className="skill-pill">hhhhh</spam>
+         
           </div>
         </div>
 

@@ -12,7 +12,7 @@ export default function Experience() {
       role: "Trainee",
       company: "Elite Web Tech",
       duration: "July 2024 - Present",
-      description: "Currently undergoing professional training in web development technologies including HTML, CSS, JavaScript, and modern frameworks, while contributing to live projects."
+      description: "At Elite Web Tech, I am training in full-stack development with a focus on Node.js and React. I work on real-time projects, follow industry coding standards,front-end frameworks, and modern web technologies."
     }
   ];
 
