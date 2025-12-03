@@ -24,9 +24,7 @@ export default function Experience() {
           <div key={index} className="experience-card">
             <h3>{exp.role} - {exp.company}</h3>
             <span className="duration">{exp.duration}</span>
-            <p>{exp.description}</p>
-            
-            
+            <p>{exp.description}</p> 
           </div>
         ))}
       </div>

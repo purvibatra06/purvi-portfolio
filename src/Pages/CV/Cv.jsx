@@ -1,5 +1,4 @@
 import Cv from "../../Components/CV/Cv";
-
 const CvPage =()=>{
   return(
     <>

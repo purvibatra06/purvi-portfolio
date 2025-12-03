@@ -17,6 +17,7 @@ export default function ContactMe() {
             <Mail size={26} className="contact-icon" />
             <a href="mailto:purvibatra484@gmail.com">
               purvibatra484@gmail.com
+
             </a>
           </div>
 
@@ -31,7 +32,7 @@ export default function ContactMe() {
           </div>
 
           <div className="contact-item">
-            <Github size={26} className="contact-icon" />
+            <Github size={26} className="contact-icon" />                     
             <a href="https://github.com/purvibatra06" target="_blank">
               github.com/purvibatra
             </a>
