@@ -22,12 +22,15 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: fadeIn 1.5s ease forwards;
 }
 
 .experience-section {
   width: 100%;
   padding: 4rem 2rem;
   min-height: 80vh;
+  animation: fadeSlideUp 1.2s ease forwards;
+  position: relative;
 }
 
 .experience-content {
@@ -39,34 +42,90 @@ header {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 2rem;
-  background: linear-gradient(90deg, #5ddcff, #a855f7);
+  background: linear-gradient(90deg, #5ddcff, #a855f7, #ff7f50, #00ffcc);
+  background-size: 300% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: gradientShimmer 4s linear infinite, popIn 1s ease forwards;
 }
 
 .experience-card {
-  background: linear-gradient(90deg, #5ddcff, #a855f7);
+  background: linear-gradient(135deg, #5ddcff33, #a855f733, #ff7f5033, #00ffcc33);
   padding: 1.5rem;
   margin: 1rem 0;
-  border-left: 4px solid #4caf50; 
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  border-radius: 8px;
+  border-left: 6px solid #4caf50;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  border-radius: 12px;
+  transform: translateY(30px);
+  opacity: 0;
+  animation: cardPop 1s ease forwards;
+}
+
+.experience-card:nth-child(1) { animation-delay: 0.2s; }
+.experience-card:nth-child(2) { animation-delay: 0.4s; }
+.experience-card:nth-child(3) { animation-delay: 0.6s; }
+.experience-card:nth-child(4) { animation-delay: 0.8s; }
+
+.experience-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(93,220,255,0.5);
+  border-left-color: #ff7f50;
 }
 
 .experience-card h3 {
   margin: 0;
   font-size: 1.2rem;
-  color: #333;
+  color: #fff;
+  animation: textPulse 3s ease-in-out infinite;
 }
 
 .duration {
   display: block;
   font-size: 0.9rem;
-  color: #666;
+  color: #ccc;
   margin-bottom: 0.5rem;
+  animation: textPulse 4s ease-in-out infinite;
 }
 
 .experience-card p {
-  color: #555;
+  color: #ddd;
   line-height: 1.5;
+  animation: textFade 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeSlideUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes gradientShimmer {
+  0% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+  100% { background-position: 0% center; }
+}
+
+@keyframes cardPop {
+  0% { opacity: 0; transform: translateY(40px) scale(0.95); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes textPulse {
+  0% { color: #5ddcff; }
+  50% { color: #a855f7; }
+  100% { color: #5ddcff; }
+}
+
+@keyframes textFade {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
 }

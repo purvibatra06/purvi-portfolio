@@ -1,67 +1,114 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  width: 100%;
-  overflow-x: hidden;
-  font-family: "Poppins", sans-serif;
-}
-
 .home-body {
-  padding-top: 300px;
-  align-items: center;
+  display: flex;
   justify-content: center;
-  text-align: center;
-  color: white;
+  align-items: center;
+  min-height: 90vh;
+  padding: 20px;
+  position: relative;
 }
 
-.intro-text h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 15px;
+.intro-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.intro-text {
+  max-width: 500px;
+  text-align: left;
 }
 
 .highlight {
+  color: #5ddcff;
   background: linear-gradient(90deg, #5ddcff, #a855f7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color:transparent;
+  animation: highlightGlow 3s ease-in-out infinite alternate;
 }
 
-.intro-text p {
-  width: 70%;
-  margin: 0 auto;
-  margin-top: 10px;
-  font-size: 1.2rem;
-  color: #d1d5db;
-  line-height: 1.7;
+@keyframes highlightGlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .know-more-btn {
   display: inline-block;
-  margin-top: 25px;
-  padding: 12px 28px;
-  border-radius: 50px;
-
+  margin-top: 20px;
+  padding: 12px 25px;
   background: linear-gradient(90deg, #5ddcff, #a855f7);
-  color: #000;
+  color: #fff;
   font-weight: 600;
+  border-radius: 25px;
   text-decoration: none;
-
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease;
 }
 
 .know-more-btn:hover {
-  opacity: 0.85;
   transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(93, 220, 255, 0.5);
 }
 
-.home-container, 
-.intro-text, 
-section, 
-div {
-  max-width: 100%;
+.intro-image {
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+
+.intro-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #5ddcff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
+}
+
+.intro-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(93, 220, 255, 0.5);
+}
+
+.floating-icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 330px;
+  height: 330px;
+  transform: translate(-50%, -50%);
+  animation: rotateIcons 20s linear infinite;
+}
+
+.floating-icons .icon {
+  position: absolute;
+  font-size: 32px;
+  color: #5ddcff;
+  transform: translate(-50%, -50%);
+}
+
+.react     { top: 0%;   left: 50%; }  
+.node      { top: 15%;  left: 85%; }  
+.express   { top: 50%;  left: 100%; }  
+.mongodb   { top: 85%;  left: 85%; }   
+.js        { top: 100%; left: 50%; }  
+.html      { top: 85%;  left: 15%; }  
+.css       { top: 50%;  left: 0%; }   
+.extra     { top: 15%;  left: 15%; }   
+
+@keyframes rotateIcons {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+  .floating-icons { width: 280px; height: 280px; }
+}
+
+@media (max-width: 480px) {
+  .intro-container { flex-direction: column; gap: 20px; }
+  .intro-image { width: 200px; height: 200px; }
+  .floating-icons { width: 240px; height: 240px; }
 }

@@ -11,7 +11,7 @@ html, body {
 }
 
 .skills-section {
-  width: 2500px;
+  width: 100%;
   min-height: 100vh;
   padding: 60px 20px;
   background: radial-gradient(circle at top, #0f0c29, #1e1b4b, #000000);
@@ -25,10 +25,17 @@ html, body {
 .gradient-title {
   font-size: 36px;
   font-weight: 800;
-  background: radial-gradient(circle at top, #5ddcff, #a855f7);
+  background: linear-gradient(90deg, #ff6ec4, #7873f5, #42e695);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 50px;
+  animation: titleGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes titleGlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .skills-container {
@@ -46,28 +53,59 @@ html, body {
   padding: 25px 20px;
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: all 0.3s ease;
-  width: 100%; 
-  box-sizing: border-box; 
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.skill-group::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, #ff6ec4, #7873f5, #42e695, #ff6ec4);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 0;
+  animation: rotate 6s linear infinite;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+
+.skill-group:hover::before {
+  opacity: 0.2;
 }
 
 .skill-group:hover {
-  transform: translateY(-5px);
-  border-color: #5ddcff;
-  box-shadow: 0 0 20px #5ddcff55;
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(66, 230, 149, 0.3), 0 10px 20px rgba(255, 110, 196, 0.3);
 }
 
 .skill-heading {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 15px;
-  background: linear-gradient(90deg, #5ddcff, #a855f7);
+  background: linear-gradient(90deg, #ff6ec4, #7873f5, #42e695);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  z-index: 1;
+  position: relative;
+  animation: headingGlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes headingGlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .skill-list {
@@ -83,37 +121,41 @@ html, body {
   gap: 6px;
   padding: 8px 12px;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
   font-size: 14px;
   font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+  color: #fff;
+  background: linear-gradient(90deg, #ff6ec4, #7873f5, #42e695);
+  background-size: 200% 200%;
+  animation: pillGradient 3s linear infinite;
   transition: all 0.3s ease;
 }
 
 .skill-pill:hover {
-  background: #5ddcff;
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(255,110,196,0.4);
   color: #000;
-  cursor: default;
+}
+
+@keyframes pillGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .skill-pill svg {
   font-size: 18px;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {
-  .gradient-title {
-    font-size: 28px;
-  }
-  .skills-container {
-    gap: 20px;
-  }
+  .gradient-title { font-size: 28px; }
+  .skills-container { gap: 20px; }
 }
 
 @media (max-width: 480px) {
-  .gradient-title {
-    font-size: 24px;
-  }
-  .skill-group {
-    padding: 20px 15px;
-  }
+  .gradient-title { font-size: 24px; }
+  .skill-group { padding: 20px 15px; }
 }

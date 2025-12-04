@@ -5,19 +5,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: fadeInZoom 1.2s ease forwards;
 }
 
 .contact-card {
-  width: 100%;              
-  max-width: 2500px;       
+  width: 100%;
+  max-width: 650px;
   background: linear-gradient(90deg, #5ddcff, #a855f7);
   padding: 35px;
   border-radius: 18px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.15);
   color: white;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
   text-align: center;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: cardSlideUp 1.4s ease forwards 0.3s;
 }
 
 .contact-title {
@@ -25,7 +29,12 @@
   font-weight: bold;
   text-align: center;
   margin-bottom: 15px;
-  color: #333;
+  background: linear-gradient(90deg, #333, #111);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+  opacity: 0;
+  animation: titleGlow 1.5s ease forwards 0.5s;
 }
 
 .contact-subtitle {
@@ -33,6 +42,8 @@
   margin-bottom: 25px;
   font-size: 16px;
   color: #333;
+  opacity: 0;
+  animation: fadeSlide 1.4s ease forwards 0.7s;
 }
 
 .contact-details {
@@ -41,6 +52,8 @@
   flex-direction: column;
   gap: 18px;
   color: #555;
+  opacity: 0;
+  animation: fadeSlide 1.4s ease forwards 0.9s;
 }
 
 .contact-item {
@@ -49,7 +62,15 @@
   gap: 12px;
   font-size: 17px;
   color: #555;
+  transform: translateX(-10px);
+  opacity: 0;
+  animation: itemStagger 0.8s ease forwards;
 }
+
+.contact-item:nth-child(1) { animation-delay: 1.0s; }
+.contact-item:nth-child(2) { animation-delay: 1.2s; }
+.contact-item:nth-child(3) { animation-delay: 1.4s; }
+.contact-item:nth-child(4) { animation-delay: 1.6s; }
 
 .contact-item a {
   color: #555;
@@ -65,4 +86,41 @@
 
 .contact-icon {
   color: #60a5fa;
+  transition: 0.3s;
+  animation: iconPulse 2.5s infinite ease-in-out;
+}
+
+.contact-item:hover .contact-icon {
+  transform: scale(1.2);
+}
+
+@keyframes fadeInZoom {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes cardSlideUp {
+  0% { opacity: 0; transform: translateY(25px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes titleGlow {
+  0% { opacity: 0; letter-spacing: 0; }
+  100% { opacity: 1; letter-spacing: 2px; }
+}
+
+@keyframes fadeSlide {
+  0% { opacity: 0; transform: translateY(15px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes itemStagger {
+  0% { opacity: 0; transform: translateX(-12px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes iconPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
 }
