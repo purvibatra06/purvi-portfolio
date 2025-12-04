@@ -8,7 +8,7 @@ import Contact from "./Pages/ContactMe/ContactMe";
 import CvPage from "./Pages/CV/Cv";
 const router = createBrowserRouter([
   {
-    path: "/home",
+    path: "/",
     element: <Home />
   },
   {
