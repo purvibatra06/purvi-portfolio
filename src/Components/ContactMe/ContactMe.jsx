@@ -1,4 +1,5 @@
-import { Mail, Github, Linkedin, Phone } from "lucide-react";
+import { MdEmail } from "react-icons/md";
+import { FaLinkedin, FaGithub, FaPhone } from "react-icons/fa";
 import "./Contact.css";
 
 export default function ContactMe() {
@@ -14,7 +15,7 @@ export default function ContactMe() {
         <div className="contact-details">
 
           <div className="contact-item">
-            <Mail size={26} className="contact-icon" />
+            <MdEmail size={26} className="contact-icon" />
             <a href="mailto:purvibatra484@gmail.com">
               purvibatra484@gmail.com
 
@@ -22,7 +23,7 @@ export default function ContactMe() {
           </div>
 
           <div className="contact-item">
-            <Linkedin size={26} className="contact-icon" />
+            <FaLinkedin size={26} className="contact-icon" />
             <a
               href="https://www.linkedin.com/in/purvi-batra-54b37b295"
               target="_blank"
@@ -32,14 +33,14 @@ export default function ContactMe() {
           </div>
 
           <div className="contact-item">
-            <Github size={26} className="contact-icon" />                     
+            <FaGithub size={26} className="contact-icon" />                     
             <a href="https://github.com/purvibatra06" target="_blank">
               github.com/purvibatra
             </a>
           </div>
 
           <div className="contact-item">
-            <Phone size={26} className="contact-icon" />
+            <FaPhone size={26} className="contact-icon" />
             <a href="tel:+91XXXXXXXXXX">+91 9066691000</a>
           </div>
         </div>

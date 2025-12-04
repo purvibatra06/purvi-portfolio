@@ -1,39 +1,42 @@
 import "./Skills.css";
+import { SiHtml5, SiCss3, SiJavascript, SiReact, SiBootstrap } from "react-icons/si";
+import {SiExpress , SiMongodb, SiNodedotjs,  } from "react-icons/si";
+import {SiGit, SiGithub,  SiVscodium, SiCanva  } from "react-icons/si";
 
 export default function Skills() {
   return (
     <section id="skills" className="skills-section">
-
       <h2 className="gradient-title">Skills</h2>
+
       <div className="skills-container">
+
         <div className="skill-group">
           <h3 className="skill-heading">Frontend</h3>
-          <div className="skill-list"> 
-            <span className="skill-pill">HTML</span>
-            <span className="skill-pill">CSS</span>
-             <span className="skill-pill">Bootstrap</span>
-             <span className="skill-pill">React</span>
-            <span className="skill-pill">JavaScript</span>
+          <div className="skill-list">
+            <span className="skill-pill"><SiHtml5 /> HTML</span>
+            <span className="skill-pill"><SiCss3 /> CSS</span>
+            <span className="skill-pill"><SiBootstrap/>Bootstrap</span>
+            <span className="skill-pill"><SiReact /> React</span>
+            <span className="skill-pill"><SiJavascript /> JavaScript</span>
           </div>
         </div>
 
         <div className="skill-group">
           <h3 className="skill-heading">Backend</h3>
           <div className="skill-list">
-            <span className="skill-pill">Node.js</span>
-            <span className="skill-pill">Express.js</span>
-            <span className="skill-pill">MongoDB</span>
+            <span className="skill-pill"><SiNodedotjs/>Node.js</span>
+            <span className="skill-pill"><SiExpress/>Express.js</span>
+            <span className="skill-pill"><SiMongodb/>MongoDB</span>
           </div>
         </div>
 
         <div className="skill-group">
           <h3 className="skill-heading">Tools</h3>
           <div className="skill-list">
-            <span className="skill-pill">Git</span>
-            <span className="skill-pill">GitHub</span>
-            <span className="skill-pill">VS Code</span>
-            <span className="skill-pill">Canva</span>
-         
+            <span className="skill-pill"><SiGit/>Git</span>
+            <span className="skill-pill"><SiGithub/>GitHub</span>
+            <span className="skill-pill">< SiVscodium/>VS Code</span>
+            <span className="skill-pill"><SiCanva/>Canva</span>
           </div>
         </div>
 
