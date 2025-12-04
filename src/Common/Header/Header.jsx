@@ -1,21 +1,20 @@
 import "./Header.css";
+import { Link } from "react-router-dom";
+
 export default function Header() {
   return (
-    <div className="home-container">
+    <header className="header">
+      <h2 className="logo">Purvi Batra</h2>
 
-      <header className="header">
-        <h2 className="logo">Purvi Batra</h2>
-
-        <nav className="nav-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#experience">Experience</a>
-          <a href="#contactMe">Contact Me</a>
-          <a href="#cv">CV</a>
-        </nav>
-      </header>
-      </div>
-  )
+      <nav className="nav-links">
+        <Link to="/home">Home</Link>
+        <Link to="/About">About</Link>
+        <Link to="/Projects">Projects</Link>
+        <Link to="/Skills">Skills</Link>
+        <Link to="/Experience">Experience</Link>
+        <Link to="/Contact">Contact Me</Link>
+        <Link to="/CvPage">CV</Link>
+      </nav>
+    </header>
+  );
 }

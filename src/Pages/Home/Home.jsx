@@ -1,11 +1,6 @@
 import "./Home.css";
 import Header from "../../Common/Header/Header";
-import About from "../About/About";
-import Projects from "../Projects/Projects";
-import Skills from "../Skills/Skills";
-import Experience from "../Experience/Experience";
-import Contact from "../ContactMe/ContactMe";
-import CvPage from "../CV/Cv";
+
 
 export default function Home() {
   return (
@@ -28,12 +23,7 @@ export default function Home() {
         </div>
       </section>
 
-      <About />
-      <Projects/>
-      <Skills/>
-      <Experience/>
-      <Contact/>
-      <CvPage/>
+     
     </div>
   );
 }
