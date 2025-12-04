@@ -1,6 +1,6 @@
 import "./Home.css";
 import Header from "../../Common/Header/Header";
-import profilePic from "../../Assets/Profile.jpeg"; 
+import profilePic from "../../assets/Profile.jpeg"; 
 import { FaReact, FaNodeJs, FaJs, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { SiMongodb, SiExpress } from "react-icons/si"; 
 import { Link } from "react-router-dom";
