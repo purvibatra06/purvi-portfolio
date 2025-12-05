@@ -1,5 +1,5 @@
 import "./Skills.css";
-import { SiHtml5, SiCss3, SiJavascript, SiReact, SiBootstrap } from "react-icons/si";
+import { SiHtml5, SiCss3, SiJavascript, SiReact, SiBootstrap, SiTypescript } from "react-icons/si";
 import {SiExpress , SiMongodb, SiNodedotjs,  } from "react-icons/si";
 import {SiGit, SiGithub,  SiVscodium, SiCanva  } from "react-icons/si";
 
@@ -18,6 +18,7 @@ export default function Skills() {
             <span className="skill-pill"><SiBootstrap/>Bootstrap</span>
             <span className="skill-pill"><SiReact /> React</span>
             <span className="skill-pill"><SiJavascript /> JavaScript</span>
+             <span className="skill-pill"><SiTypescript /> Typescript</span>
           </div>
         </div>
 
