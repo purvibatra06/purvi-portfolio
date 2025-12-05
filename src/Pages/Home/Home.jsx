@@ -1,10 +1,10 @@
 import "./Home.css";
 import Header from "../../Common/Header/Header";
-import profilePic from "../../assets/Profile.jpeg"; 
-import { FaReact, FaNodeJs, FaJs, FaHtml5, FaCss3Alt } from "react-icons/fa";
-import { SiMongodb, SiExpress } from "react-icons/si"; 
+import profilePic from "../../assets/Profile.jpeg";
+import cvFile from "../../assets/Purvi_CV.pdf";
+import { FaReact, FaNodeJs, FaJs, FaHtml5, FaCss3Alt, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { SiMongodb, SiExpress } from "react-icons/si";
 import { Link } from "react-router-dom";
-
 
 export default function Home() {
   return (
@@ -13,18 +13,42 @@ export default function Home() {
 
       <section className="home-body" id="home">
         <div className="intro-container">
-        
+
+   
           <div className="intro-text">
             <h1>
               Hello, I'm <span className="highlight">Purvi Batra</span>
             </h1>
             <p>
-              I am a passionate Web Developer working with <strong>React</strong> and <strong>Node.js</strong>. I love building clean, fast, and modern web applications.
+             I’m a passionate Web Developer who enjoys building modern, and responsive applications. I work with React, Node.js, and the MERN stack to create clean UI and seamless user experiences. I love transforming ideas into functional and visually engaging digital products.
             </p>
-            <Link to="/About" className="know-more-btn">
-             Know More
-             </Link>
 
+       
+            <div className="home-buttons">
+              <Link to="/About" className="know-more-btn">Know More</Link>
+
+               <a
+                href={cvFile} 
+                download="Purvi_CV.pdf"
+                className="download-btn"
+              >
+                Download CV
+              </a>
+            </div>
+
+            <div className="social-icons">
+              <a href="https://www.linkedin.com/in/purvi-batra-54b37b295" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin />
+              </a>
+
+              <a href="https://github.com/purvibatra06" target="_blank" rel="noopener noreferrer">
+                <FaGithub />
+              </a>
+
+              <a href="mailto:purvibatra484@gmail.com">
+                <FaEnvelope />
+              </a>
+            </div>
           </div>
 
           <div className="intro-image">
@@ -39,6 +63,7 @@ export default function Home() {
               <SiExpress className="icon express" />
             </div>
           </div>
+
         </div>
       </section>
     </div>

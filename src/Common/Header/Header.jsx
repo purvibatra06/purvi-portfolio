@@ -13,7 +13,7 @@ export default function Header() {
         <Link to="/Skills">Skills</Link>
         <Link to="/Experience">Experience</Link>
         <Link to="/Contact">Contact Me</Link>
-        <Link to="/CvPage">CV</Link>
+       
       </nav>
     </header>
   );

@@ -1,5 +1,5 @@
 import "./About.css";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -9,25 +9,32 @@ export default function About() {
         <h2>About Me</h2>
 
         <p>
-          Hi, I’m <strong>Purvi Batra</strong> — a passionate Developer skilled in 
-          React.js, JavaScript, HTML, CSS, and Node.js.
+          Hi, I’m <strong>Purvi Batra</strong>, a dedicated and enthusiastic Web Developer
+          who loves turning ideas into beautiful and functional digital experiences.
         </p>
 
         <p>
-          I enjoy building clean, user-friendly and visually appealing web interfaces. 
-          My goal is to create smooth, responsive experiences for users. I also work 
-          on backend development using Node.js and Express.
+          I specialize in creating modern, responsive, and user-friendly web interfaces
+          using React.js, JavaScript, HTML, CSS, and Tailwind. 
+          I also work with backend technologies like Node.js and Express to build complete web solutions.
         </p>
 
         <p>
-          I am currently pursuing <strong>BCA</strong> and working on several real-world 
-          projects to improve my development skills.
+          I have completed my <strong>BCA</strong> and continuously improve my skills by
+         working on real-world projects, exploring new tools, and keeping up with the latest trends in web development.
+
         </p>
 
-        <div className="social-icons">
-          <a href="mailto:purvibatra484@gmail.com" className="icon email"><FaEnvelope /></a>
-          <a href="https://www.linkedin.com/in/purvi-batra-54b37b295" target="_blank" className="icon linkedin"><FaLinkedin /></a>
-          <a href="https://github.com/purvibatra06" target="_blank" className="icon github"><FaGithub /></a>
+        <p>
+          My focus is to build clean, intuitive, and impactful websites that not only look good
+          but also deliver a smooth user experience. I’m always excited to take on new challenges
+          and bring creative ideas to life.
+        </p>
+
+        <div className="about-btn-container">
+          <Link to="/projects" className="view-projects-btn">
+            View My Projects →
+          </Link>
         </div>
 
       </div>
