@@ -6,12 +6,12 @@ export default function Projects() {
     {
       title: "Flight Management System",
       description: "A DBMS project for managing flights, passengers, tickets, and transactions.",
-      github: "https://github.com/yourusername/flight-management-system",
+      github: "https://github.com/purvibatra06/Flight-Management-System",
     },
     {
       title: "Temperature Convertor",
       description: "Built using HTML, CSS, and JavaScript. Converts between Celsius, Fahrenheit, and Kelvin instantly.",
-      github: "https://github.com/yourusername/temperature-convertor",
+      github: "https://github.com/purvibatra06/All-Projects/tree/main/Temperature%20Convertor",
     },
     {
       title: "Tindog Website",
@@ -31,7 +31,7 @@ export default function Projects() {
     {
       title: "Portfolio Website",
       description: "My personal portfolio website built using React and CSS. Showcases projects, skills, and contact info.",
-      github: "https://github.com/yourusername/portfolio",
+      github: "https://github.com/purvibatra06/purvi-portfolio",
     },
   ];
 
