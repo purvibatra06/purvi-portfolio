@@ -9,8 +9,8 @@ export default function Footer() {
         <div className="footer-center">
           <h4>Quick Links</h4>
           <ul className="quick-links">
-              <Link to="/About">About Me</Link>
-              <Link to="/Projects">My Work</Link>
+            <li><Link to="/About">About Me</Link></li>
+            <li><Link to="/Projects">Projects</Link></li>
           </ul>
         </div>
 
