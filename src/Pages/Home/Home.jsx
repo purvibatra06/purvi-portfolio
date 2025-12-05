@@ -1,7 +1,7 @@
 import "./Home.css";
 import Header from "../../Common/Header/Header";
 import profilePic from "../../assets/Profile.jpeg";
-import cvFile from "../../assets/Purvi_CV.pdf";
+import cvFile from "../../assets/Purvi_cv.pdf";
 import { FaReact, FaNodeJs, FaJs, FaHtml5, FaCss3Alt, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { SiMongodb, SiExpress } from "react-icons/si";
 import { Link } from "react-router-dom";
