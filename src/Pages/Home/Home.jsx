@@ -1,5 +1,6 @@
 import "./Home.css";
 import Header from "../../Common/Header/Header";
+import Footer from "../../Common/Footer/Footer";
 import profilePic from "../../assets/Profile.jpeg";
 import cvFile from "../../assets/Purvi_cv.pdf";
 import { FaReact, FaNodeJs,  FaJs, FaHtml5, FaCss3Alt, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
@@ -69,6 +70,7 @@ export default function Home() {
 
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

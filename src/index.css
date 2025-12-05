@@ -5,9 +5,7 @@
   max-width: none;
   max-height: none;
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
   background: radial-gradient(circle at top, #0f0c29, #1e1b4b, #000000);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
