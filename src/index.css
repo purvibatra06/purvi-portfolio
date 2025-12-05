@@ -2,10 +2,10 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  max-width: none;
-  max-height: none;
+
   color-scheme: light dark;
   background: radial-gradient(circle at top, #0f0c29, #1e1b4b, #000000);
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -23,6 +23,7 @@ a:hover {
 }
 
 html {
+  width: 100%;
   background: radial-gradient(circle at top, #0f0c29, #1e1b4b, #000000);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -30,9 +31,10 @@ html {
 
 body {
   margin: 0;
-  place-items: center;
+  width: 100%;
   min-width: 320px;
   background-color: transparent;
+  display: block;      
 }
 
 h1 {

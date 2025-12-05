@@ -1,8 +1,10 @@
 .about-section {
   padding-top: 150px;
   min-height: 100vh;
-  justify-content: center;
-  align-items: center;
+  display: flex;            
+  flex-direction: column;    
+  justify-content: center;    
+  align-items: center;        
   text-align: center;
   animation: fadeInUp 1.2s ease forwards;
   background-color: transparent;
@@ -10,10 +12,12 @@
 
 .about-content {
   width: 100%;
-  max-width: 900px;
+  max-width: 1000px;
+  margin: 0 auto;           
   opacity: 0;
   animation: contentPop 1.4s ease forwards 0.3s;
 }
+
 
 .about-content h2 {
   font-size: 2.8rem;

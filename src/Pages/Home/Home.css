@@ -15,6 +15,30 @@
   justify-content: center;
 }
 
+.home-page-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.home-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  position: relative;
+}
+
+.intro-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .intro-text {
   max-width: 500px;
   text-align: left;
