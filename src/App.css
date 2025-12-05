@@ -1,7 +1,8 @@
 #root {
-  /* margin: 0 auto; */
   padding: 0;
   text-align: center;
+  background: radial-gradient(circle at top, #0f0c29, #1e1b4b, #000000);
+  min-height: 100vh;
 }
 
 .logo {
@@ -10,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -21,6 +24,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
