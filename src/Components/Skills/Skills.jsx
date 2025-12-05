@@ -1,7 +1,7 @@
 import "./Skills.css";
 import { SiHtml5, SiCss3, SiJavascript, SiReact, SiBootstrap, SiTypescript, SiMysql } from "react-icons/si";
 import {SiExpress , SiMongodb, SiNodedotjs } from "react-icons/si";
-import {SiGit, SiGithub,  SiVscodium, SiCanva  } from "react-icons/si";
+import {SiGit, SiGithub,  SiVscodium, SiCanva ,SiPostman } from "react-icons/si";
 
 export default function Skills() {
   return (
@@ -39,6 +39,7 @@ export default function Skills() {
             <span className="skill-pill"><SiGithub/>GitHub</span>
             <span className="skill-pill">< SiVscodium/>VS Code</span>
             <span className="skill-pill"><SiCanva/>Canva</span>
+             <span className="skill-pill"><SiPostman/>Postman</span>
           </div>
         </div>
 
