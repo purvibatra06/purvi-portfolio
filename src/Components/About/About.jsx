@@ -15,7 +15,7 @@ export default function About() {
 
         <p>
           I specialize in creating modern, responsive, and user-friendly web interfaces
-          using React.js, JavaScript, HTML, CSS, and Tailwind. 
+          using React.js, JavaScript, HTML, CSS, and Bootstrap.
           I also work with backend technologies like Node.js and Express to build complete web solutions.
         </p>
 

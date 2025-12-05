@@ -144,39 +144,39 @@
 /* Position each icon around the circle (150px radius) */
 /* Orbit animation applied to each icon */
 .floating-icons .react {
-  animation: orbit1 15s linear infinite;
+  animation: orbit1 12s linear infinite;
 }
 
 .floating-icons .node {
-  animation: orbit2 15s linear infinite;
+  animation: orbit2 14s linear infinite;
 }
 
 .floating-icons .js {
-  animation: orbit3 15s linear infinite;
+  animation: orbit3 16s linear infinite;
 }
 
 .floating-icons .html {
-  animation: orbit4 15s linear infinite;
+  animation: orbit4 18s linear infinite;
 }
 
 .floating-icons .css {
-  animation: orbit5 15s linear infinite;
+  animation: orbit5 20s linear infinite;
 }
 
 .floating-icons .mongodb {
-  animation: orbit6 15s linear infinite;
+  animation: orbit6 22s linear infinite;
 }
 
 .floating-icons .express {
-  animation: orbit7 15s linear infinite;
+  animation: orbit7 24s linear infinite;
 }
 
 .floating-icons .typescript {
-  animation: orbit8 15s linear infinite;
+  animation: orbit8 26s linear infinite;
 }
 
 .floating-icons .mysql {
-  animation: orbit9 15s linear infinite;
+  animation: orbit9 28s linear infinite;
 }
 
 .floating-icons .icon:hover {

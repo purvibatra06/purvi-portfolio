@@ -1,8 +1,7 @@
 #root {
   padding: 0;
   text-align: center;
-  background: radial-gradient(circle at top, #0f0c29, #1e1b4b, #000000);
-  min-height: 100vh;
+  background-color: transparent;
 }
 
 .logo {

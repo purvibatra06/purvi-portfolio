@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   animation: fadeInZoom 1.2s ease forwards;
+  background-color: transparent;
 }
 
 .contact-card {
@@ -17,7 +18,7 @@
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.15);
   color: white;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
   text-align: center;
   transform: translateY(20px);
   opacity: 0;
@@ -67,10 +68,21 @@
   animation: itemStagger 0.8s ease forwards;
 }
 
-.contact-item:nth-child(1) { animation-delay: 1.0s; }
-.contact-item:nth-child(2) { animation-delay: 1.2s; }
-.contact-item:nth-child(3) { animation-delay: 1.4s; }
-.contact-item:nth-child(4) { animation-delay: 1.6s; }
+.contact-item:nth-child(1) {
+  animation-delay: 1.0s;
+}
+
+.contact-item:nth-child(2) {
+  animation-delay: 1.2s;
+}
+
+.contact-item:nth-child(3) {
+  animation-delay: 1.4s;
+}
+
+.contact-item:nth-child(4) {
+  animation-delay: 1.6s;
+}
 
 .contact-item a {
   color: #555;
@@ -95,32 +107,75 @@
 }
 
 @keyframes fadeInZoom {
-  0% { opacity: 0; transform: scale(0.95); }
-  100% { opacity: 1; transform: scale(1); }
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @keyframes cardSlideUp {
-  0% { opacity: 0; transform: translateY(25px); }
-  100% { opacity: 1; transform: translateY(0); }
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes titleGlow {
-  0% { opacity: 0; letter-spacing: 0; }
-  100% { opacity: 1; letter-spacing: 2px; }
+  0% {
+    opacity: 0;
+    letter-spacing: 0;
+  }
+
+  100% {
+    opacity: 1;
+    letter-spacing: 2px;
+  }
 }
 
 @keyframes fadeSlide {
-  0% { opacity: 0; transform: translateY(15px); }
-  100% { opacity: 1; transform: translateY(0); }
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes itemStagger {
-  0% { opacity: 0; transform: translateX(-12px); }
-  100% { opacity: 1; transform: translateX(0); }
+  0% {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes iconPulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.15); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.15);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
