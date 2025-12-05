@@ -2,8 +2,8 @@ import "./Home.css";
 import Header from "../../Common/Header/Header";
 import profilePic from "../../assets/Profile.jpeg";
 import cvFile from "../../assets/Purvi_cv.pdf";
-import { FaReact, FaNodeJs, FaJs,FaTs, FaHtml5, FaCss3Alt, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import { SiMongodb, SiExpress } from "react-icons/si";
+import { FaReact, FaNodeJs, FaJs, FaHtml5, FaCss3Alt, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { SiMongodb, SiExpress,SiTypescript, SiMysql } from "react-icons/si";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -57,11 +57,13 @@ export default function Home() {
               <FaReact className="icon react" />
               <FaNodeJs className="icon node" />
               <FaJs className="icon js" />
-               <FaTs className="icon ts" />
+             
               <FaHtml5 className="icon html" />
               <FaCss3Alt className="icon css" />
               <SiMongodb className="icon mongodb" />
               <SiExpress className="icon express" />
+              <SiTypescript className="icon typescript" />
+              <SiMysql className="icon mysql" />
             </div>
           </div>
 
