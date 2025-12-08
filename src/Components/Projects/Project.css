@@ -107,17 +107,14 @@
 }
 
 
-@media screen and (max-width: 768px) {
-  .timeline-item {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-    text-align: left !important;
-  }
-  .timeline-item.left, .timeline-item.right {
-    left: 0;
-  }
-  .timeline-item::after {
-    left: 50px;
+//* MOBILE: HIDE THE TIMELINE PIPE COMPLETELY */
+@media (max-width: 768px) {
+  .timeline::before {
+    content: none !important;
+    display: none !important;
+    background: none !important;
+    border: none !important;
+    width: 0 !important;
+    height: 0 !important;
   }
 }
