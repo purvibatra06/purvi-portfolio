@@ -1,5 +1,6 @@
 import "./Header.css";
 import { Link } from "react-router-dom";
+import PurviCV from "../../assets/Purvi_cv.pdf";
 
 export default function Header() {
   return (
@@ -13,6 +14,9 @@ export default function Header() {
         <Link to="/Skills">Skills</Link>
         <Link to="/Experience">Experience</Link>
         <Link to="/Contact">Contact Me</Link>
+        <a href={PurviCV} target="_blank" rel="noopener noreferrer">
+          CV
+        </a>
        
       </nav>
     </header>
