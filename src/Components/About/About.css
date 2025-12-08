@@ -122,7 +122,6 @@
   color: #cbd5e1;
 }
 
-/* ===== EDUCATION CARDS ===== */
 .education-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -202,4 +201,40 @@
 @keyframes fadeInCard {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 768px) {
+
+  .about-card {
+    width: 95%; 
+    padding: 25px 20px;
+    margin: 0 auto; 
+  }
+
+  .highlight-heading {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .tree ul {
+    padding-left: 15px; 
+    padding-right: 10px;
+  }
+
+  .education-cards {
+    grid-template-columns: 1fr; 
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 16px;
+  }
+
+  .edu-card {
+    width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+  }
+
+  .about-btn-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }

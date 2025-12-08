@@ -408,11 +408,25 @@ color: #5ddcff;
   }
 }
 
-@media (max-width: 480px) {
-  .floating-icons {
-    width: 220px;
-    height: 220px;
+.home-buttons a {
+  display: inline-block;
+  width: 180px;        
+  text-align: center;
+  padding: 12px 0;
+}
+
+@media (max-width: 768px) {
+  .home-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
   }
+
+  .home-buttons a {
+    width: 85% !important;   
+    padding: 14px 0 !important;
+  }
+}
 
   .floating-icons .icon {
     font-size: 24px;
@@ -507,4 +521,3 @@ color: #5ddcff;
       transform: translate(-50%, -50%) rotate(680deg) translateX(100px) rotate(-680deg);
     }
   }
-}

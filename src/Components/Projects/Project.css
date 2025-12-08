@@ -105,16 +105,34 @@
 .github-button:hover {
   background-color: #444d56;
 }
-
-
-//* MOBILE: HIDE THE TIMELINE PIPE COMPLETELY */
 @media (max-width: 768px) {
-  .timeline::before {
-    content: none !important;
-    display: none !important;
-    background: none !important;
-    border: none !important;
-    width: 0 !important;
-    height: 0 !important;
+  /* Keep the vertical line visible, adjust its position */
+  .timeline::after {
+    left: 20px; /* move line to the left for mobile */
+    margin-left: 0;
+  }
+
+  /* Make each item full width */
+  .timeline-item {
+    width: 100%;
+    padding-left: 60px; /* leave space for the vertical line */
+    padding-right: 20px;
+    text-align: left; 
+    left: 0 !important;
+  }
+
+  /* Position the dot near the line */
+  .timeline-item::after,
+  .timeline-item.right::after {
+    left: 20px !important; /* dot aligns with line */
+    transform: translateX(0);
+    right: auto;
+  }
+
+  /* Increase card width and center content */
+  .timeline-item .content {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
   }
 }

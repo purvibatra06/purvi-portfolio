@@ -42,26 +42,21 @@ export default function About() {
             </ul>
           </div>
           <div className="education-cards">
-
-            <article className="edu-card">
-           
-              <div className="edu-body">
+            <article className="edu-card"> 
+               <div className="edu-body">
                 <h4>MCA — Master of Computer Applications (ongoing)</h4>
                 <p className="edu-school">Lovely Professional University — AI/ML specialization</p>
                 <p className="edu-duration">2025 — Present</p>
               </div>
             </article>
             <article className="edu-card">
-              
-             
+                 
               <div className="edu-body">
                 <h4>BCA — Bachelor of Computer Applications</h4>
                 <p className="edu-school">Tilak Raj Chadha Institute of Management & Technology, Yamunanagar</p>
                 <p className="edu-duration">2022 — 2025</p>
               </div>
             </article>
-
-          
 
             <article className="edu-card">
               <div className="edu-body">
@@ -75,7 +70,6 @@ export default function About() {
 
         <div className="about-subsection">
           <h3 className="highlight-heading">Hobbies</h3>
-
           <div className="tree">
             <ul>
               <li><span>Crafting & Creations</span></li>
@@ -91,7 +85,6 @@ export default function About() {
             View My Projects →
           </Link>
         </div>
-
       </div>
     </section>
   );
