@@ -18,9 +18,11 @@ export default function Home() {
 
 
             <div className="intro-text">
-              <h1>
-                Hello, I'm <span className="highlight">Purvi Batra</span>
-              </h1>
+              <h1 className="main-heading">MERN Stack Developer</h1>
+
+                <h2 className="sub-heading">
+                 Hello, I'm <span className="highlight">Purvi Batra</span>
+                 </h2>
               <p>
                 I’m a passionate Web Developer who enjoys building modern, and responsive applications. I work with React, Node.js, and the MERN stack to create clean UI and seamless user experiences. I love transforming ideas into functional and visually engaging digital products.
               </p>

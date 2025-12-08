@@ -7,7 +7,7 @@ export default function Header() {
       <h2 className="logo">Purvi Batra</h2>
 
       <nav className="nav-links">
-        <Link to="/home">Home</Link>
+        <Link to="/">Home</Link>
         <Link to="/About">About</Link>
         <Link to="/Projects">Projects</Link>
         <Link to="/Skills">Skills</Link>

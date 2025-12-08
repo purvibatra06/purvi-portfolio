@@ -6,6 +6,20 @@
   padding: 20px;
   position: relative;
 }
+.main-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+color: #5ddcff;
+  
+  margin-bottom: 10px;
+}
+
+.sub-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 0;
+}
+
 
 .intro-container {
   display: flex;
@@ -89,7 +103,7 @@
 
 .download-btn {
   padding: 12px 25px;
-  background: #0ea5e9;
+ background: linear-gradient(90deg, #5ddcff, #a855f7);
   color: #fff;
   font-weight: 600;
   border-radius: 25px;

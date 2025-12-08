@@ -21,12 +21,12 @@ export default function Projects() {
     {
       title: "Job Portal",
       description: "Built using Node.js with authentication, role-based access, company management, and job posting features.",
-      github: "https://github.com/yourusername/job-portal",
+      github: "https://github.com/purvibatra06/All-Projects/tree/main/Job-portal",
     },
     {
       title: "Online Course Management System",
       description: "Built using Node.js and React, supporting courses, instructors, students, enrollment, and assignments.",
-      github: "https://github.com/yourusername/online-course-management-system",
+      github: "https://github.com/purvibatra06/Online-course-Management",
     },
     {
       title: "Portfolio Website",

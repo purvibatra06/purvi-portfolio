@@ -18,7 +18,6 @@ export default function ContactMe() {
             <MdEmail size={26} className="contact-icon" />
             <a href="mailto:purvibatra484@gmail.com">
               purvibatra484@gmail.com
-
             </a>
           </div>
 
