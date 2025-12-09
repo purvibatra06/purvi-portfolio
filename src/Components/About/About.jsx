@@ -22,7 +22,7 @@ export default function About() {
 
           <p>
             I have completed my <strong>BCA (2022–2025)</strong> from
-            <strong> Tilak Raj Chadha Institute of Management & Technology, Yamunanagar</strong>.
+            <strong> Tilak Raj Chadha Institute of Management & Technology affiliated with Kurukshetra University(KUK), Yamunanagar</strong>.
             Currently, I am pursuing my <strong>Master’s in AI/ML</strong> from
             <strong> Lovely Professional University</strong>.
           </p>
