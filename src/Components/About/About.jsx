@@ -26,17 +26,13 @@ export default function About() {
             Currently, I am pursuing my <strong>Master’s in AI/ML</strong> from
             <strong> Lovely Professional University</strong>.
           </p>
-
           <p>
             My focus is to build clean, intuitive, and impactful websites that not only look good
             but also deliver a smooth user experience.
           </p>
         </div>
-
-
         <div className="about-subsection">
           <h3 className="highlight-heading">Education</h3>
-
           <div className="tree">
             <ul>
             </ul>
@@ -49,11 +45,10 @@ export default function About() {
                 <p className="edu-duration">2025 — Present</p>
               </div>
             </article>
-            <article className="edu-card">
-                 
+            <article className="edu-card">           
               <div className="edu-body">
                 <h4>BCA — Bachelor of Computer Applications</h4>
-                <p className="edu-school">Tilak Raj Chadha Institute of Management & Technology, Yamunanagar</p>
+                <p className="edu-school">Tilak Raj Chadha Institute of Management & Technology affiliated with Kurukshetra University(KUK), Yamunanagar</p>
                 <p className="edu-duration">2022 — 2025</p>
               </div>
             </article>
