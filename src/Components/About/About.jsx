@@ -27,8 +27,7 @@ export default function About() {
             <strong> Lovely Professional University</strong>.
           </p>
           <p>
-            My focus is to build clean, intuitive, and impactful websites that not only look good
-            but also deliver a smooth user experience.
+            My focus is to build clean, intuitive, and impactful websites that not only look good user experience.
           </p>
         </div>
         <div className="about-subsection">
