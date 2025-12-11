@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
-import PurviCV from "../../assets/Purvi_cv.pdf";
+import PurviCV from "../../assets/Purvi_resume.pdf";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);

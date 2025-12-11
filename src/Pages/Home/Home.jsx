@@ -2,7 +2,7 @@ import "./Home.css";
 import Header from "../../Common/Header/Header";
 import Footer from "../../Common/Footer/Footer";
 import profilePic from "../../assets/Profile.jpeg";
-import cvFile from "../../assets/Purvi_cv.pdf";
+import cvFile from "../../assets/Purvi_resume.pdf";
 import {  FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 import { Link } from "react-router-dom";
