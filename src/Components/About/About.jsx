@@ -8,7 +8,6 @@ export default function About() {
 
         <div className="about-card">
           <h2>About Me</h2>
-
           <p>
             Hi, I’m <strong>Purvi Batra</strong>, a dedicated and enthusiastic Web Developer
             who loves turning ideas into beautiful and functional digital experiences.
@@ -26,9 +25,11 @@ export default function About() {
             Currently, I am pursuing my <strong>Master’s in AI/ML</strong> from
             <strong> Lovely Professional University</strong>.
           </p>
+
           <p>
             My focus is to build clean, intuitive, and impactful websites that not only look good user experience.
           </p>
+          
         </div>
         <div className="about-subsection">
           <h3 className="highlight-heading">Education</h3>
@@ -36,6 +37,7 @@ export default function About() {
             <ul>
             </ul>
           </div>
+
           <div className="education-cards">
             <article className="edu-card"> 
                <div className="edu-body">
@@ -44,6 +46,7 @@ export default function About() {
                 <p className="edu-duration">2025 — Present</p>
               </div>
             </article>
+            
             <article className="edu-card">           
               <div className="edu-body">
                 <h4>BCA — Bachelor of Computer Applications</h4>
@@ -76,7 +79,7 @@ export default function About() {
 
         <div className="about-btn-container">
           <Link to="/projects" className="view-projects-btn">
-            View My Projects →
+            View My Projects →    
           </Link>
         </div>
       </div>

@@ -26,7 +26,7 @@ export default function Projects() {
     {
       title: "Online Course Management System",
       description: "Built using Node.js and React, supporting courses, instructors, students, enrollment, and assignments.",
-      github: "https://github.com/purvibatra06/Online-course-Management",
+      github: "https://github.com/purvibatra06/online-course-management-system",
     },
     {
       title: "Portfolio Website",
