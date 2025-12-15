@@ -14,7 +14,7 @@ html, body {
   width: 100%;
   min-height: 100vh;
   padding: 60px 20px;
-  background: radial-gradient(circle at top, #0f0c29, #1e1b4b, #000000);
+  background-color: transparent;
   color: #fff;
   text-align: center;
   display: flex;

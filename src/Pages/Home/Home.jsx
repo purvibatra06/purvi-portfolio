@@ -36,7 +36,7 @@ export default function Home() {
                   download="Purvi_CV.pdf"
                   className="download-btn"
                 >
-                  Download CV
+                  Download Resume
                 </a>
               </div>
 

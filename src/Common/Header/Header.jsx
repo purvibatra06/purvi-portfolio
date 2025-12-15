@@ -25,7 +25,7 @@ export default function Header() {
         <Link to="/Experience" onClick={() => setIsOpen(false)}>Experience</Link>
         <Link to="/Contact" onClick={() => setIsOpen(false)}>Contact Me</Link>
         <a href={PurviCV} target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>
-          CV
+          Resume
         </a>
       </nav>
     </header>

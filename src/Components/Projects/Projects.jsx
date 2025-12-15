@@ -14,9 +14,9 @@ export default function Projects() {
       github: "https://github.com/purvibatra06/All-Projects/tree/main/Temperature%20Convertor",
     },
     {
-      title: "Tindog Website",
-      description: "A modern dating-style website built with HTML, CSS, and Bootstrap. Includes user profiles and swipe interactions.",
-      github: "https://github.com/yourusername/tindog-website",
+      title: "Landing Page",
+      description: "This project is a responsive landing page designed using HTML, CSS, and JavaScript to provide an attractive and user-friendly first impression of a website or product.",
+      github: "https://github.com/purvibatra06/All-Projects/tree/main/LANDING%20PAGE",
     },
     {
       title: "Job Portal",
