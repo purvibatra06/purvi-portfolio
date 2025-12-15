@@ -11,14 +11,12 @@ export default function Header() {
 
       <h2 className="logo">Purvi Batra</h2>
 
-      {/* Hamburger Icon */}
       <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
         <span></span>
         <span></span>
         <span></span>
       </div>
 
-      {/* Nav Links */}
       <nav className={`nav-links ${isOpen ? "open" : ""}`}>
         <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
         <Link to="/About" onClick={() => setIsOpen(false)}>About</Link>
